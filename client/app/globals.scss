@@ -1,0 +1,28 @@
+@use "./responsiveness.scss" as *;
+
+:root {
+  --primary: #DAE2CB;
+  --secondary: #17321A;
+  --alt: #C6D6B1;
+  --accent: #FBFD88;
+  --inactive: #4A5D45;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-instrument);
+  font-weight: 400;
+  overflow: hidden;
+  background-color: var(--primary);
+  color: var(--secondary);
+  -webkit-font-smoothing: antialiased;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

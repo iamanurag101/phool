@@ -1,0 +1,14 @@
+.nav-link {
+    color: var(--inactive);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: var(--secondary);
+    }
+
+    &[data-active="true"] {
+        color: var(--secondary);
+        text-decoration: underline;
+    }
+}

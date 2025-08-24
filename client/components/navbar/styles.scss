@@ -1,0 +1,48 @@
+@use "../../app/responsiveness.scss" as *;
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+    .left {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-start;
+
+        .logo {
+            height: 6rem;
+            width: 6rem;
+            display: flex;
+            align-items: center;
+
+            @include sm {
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+
+    .center {
+        display: flex;
+        align-content: center;
+        gap: 2rem;
+
+        @include sm {
+            font-size: 0.75rem;
+            gap: 1rem;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+    }
+}
